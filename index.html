@@ -1,214 +1,115 @@
 <!doctype html>
 <html lang="kk">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="theme-color" content="#f7f3ec" />
-  <title>Арманбек & Ғалия — Үйлену тойы</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Арманбек & Ғалия — Үйлену тойы</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat:wght@300;400;500&family=Prata&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <audio id="bgMusic" loop preload="none">
-    <source src="music.mp3" type="audio/mpeg">
-  </audio>
+<audio id="music" loop><source src="audio/music.mp3" type="audio/mpeg"></audio>
+<header class="topbar">
+  <div class="brand">Арманбек <span>&</span> Ғалия</div>
+  <button id="sound" class="icon-btn" aria-label="Музыка">♫</button>
+  <a href="#rsvp" class="icon-btn">⌄</a>
+</header>
 
-  <button class="music-btn" id="musicBtn" aria-label="Музыканы қосу/өшіру">
-    <span class="music-icon">♪</span>
-  </button>
+<main>
+<section class="screen hero">
+  <i class="arc a1"></i><i class="arc a2"></i>
+  <div class="leaves green top-right"></div>
+  <div class="leaves gold bottom-left"></div>
+  <div class="hero-center">
+    <div class="script name">Арманбек</div>
+    <div class="amp">&</div>
+    <div class="script name">Ғалия</div>
+  </div>
+</section>
 
-  <main class="site-shell">
+<section class="screen invite">
+  <i class="arc a3"></i><i class="arc a4"></i>
+  <div class="leaves gold top-left"></div>
+  <div class="script section-title">Құрметті</div>
+  <p>АҒАЙЫН-ТУЫС, БАУЫРЛАР.<br>ҚҰДА-ЖЕКЖАТ,<br>НАҒАШЫ-ЖИЕН, БӨЛЕЛЕР,<br>ҚҰРБЫ-ҚҰРДАС,<br>ДОС-ЖАРАН, КӨРШІЛЕР<br>МЕН ӘРІПТЕСТЕР!</p>
+  <div class="leaves gold bottom-right"></div>
+</section>
 
-    <!-- 01. HERO -->
-    <section class="section hero reveal">
-      <span class="leaf leaf-top-right"></span>
-      <span class="gold-branch branch-bottom-left"></span>
+<section class="screen message">
+  <div class="leaves green left-mid"></div>
+  <div class="oval-card">
+    <div class="small">СІЗДЕРДІ БАЛАЛАРЫМЫЗ</div>
+    <div class="script medium">Арманбек</div>
+    <div class="tiny">МЕН</div>
+    <div class="script medium">Ғалия</div>
+    <p>ҮЙЛЕНУ ТОЙЫНА<br>АРНАЛҒАН САЛТАНАТТЫ<br>ДАСТАРХАНЫМЫЗДЫҢ<br>ҚАДІРЛІ ҚОНАҒЫ БОЛУҒА<br>ШАҚЫРАМЫЗ!</p>
+  </div>
+  <div class="leaves gold bottom-left"></div>
+  <div class="leaves green bottom-right"></div>
+</section>
 
-      <div class="hero-frame">
-        <div class="hero-small">ҮЙЛЕНУ ТОЙЫ</div>
-        <h1 class="hero-names">
-          <span>Арманбек</span>
-          <i>&</i>
-          <span>Ғалия</span>
-        </h1>
-      </div>
+<section class="screen date">
+  <div class="leaves green top-right"></div>
+  <div class="leaves gold center-gold"></div>
+  <div class="script section-title">Той салтанаты:</div>
+  <div class="date-row">
+    <div><b>ҚАЗАН</b><span>2026</span></div>
+    <strong>28</strong>
+    <div><b>САҒАТ</b><span>18:00</span></div>
+  </div>
+  <div class="calendar">
+    <div class="cal-head"><span>ҚАЗАН</span><span>2026</span></div>
+    <div class="week"><b>ДС</b><b>СС</b><b>СР</b><b>БС</b><b>ЖМ</b><b>СБ</b><b>ЖС</b></div>
+    <div class="days">
+      <i> </i><i> </i><i> </i><i>1</i><i>2</i><i>3</i><i>4</i>
+      <i>5</i><i>6</i><i>7</i><i>9</i><i>10</i><i>11</i><i>12</i>
+      <i>13</i><i>14</i><i>15/i><i>16</i><i>17</i><i>18</i><i>19</i>
+      <i>20</i><i>21</i><i>22</i><i>23</i><i>24</i><i>24</i><i>25</i>
+      <i>26</i><i>27</i><i class="heart">28</i><i>29</i><i>30</i><i>31</i>
+    </div>
+  </div>
+</section>
 
-      <div class="scroll-hint">
-        <span></span>
-        ТӨМЕНГЕ СЫРҒЫТЫҢЫЗ
-      </div>
-    </section>
+<section class="screen venue">
+  <div class="venue-bg"></div>
+  <div class="oval-card venue-card">
+    <div class="script section-title">Мекенжайы:</div>
+    <p>АЛМАТЫ ҚАЛАСЫ<br>МАЙЛИНА КӨШЕСІ, 20/9</p>
+    <div class="script medium">Golden Hall</div>
+    <p>МЕЙРАМХАНАСЫ</p>
+    <a class="pill" href="https://go.2gis.com/LQ3eE" target="_blank" rel="noopener">КАРТА ♡</a>
+  </div>
+</section>
 
-    <!-- 02. INVITATION TEXT -->
-    <section class="section intro reveal">
-      <span class="gold-line line-top"></span>
-      <span class="gold-branch branch-top-left"></span>
+<section class="screen dress">
+  <div class="leaves green top-right"></div>
+  <div class="leaves gold center-gold"></div>
+  <div class="script section-title">Той иесі:</div>
+  <div class="dress-title">Тәубәгүл</div>
+  
+  <div class="palette"><i></i><i></i><i></i><i></i><i></i></div>
+</section>
 
-      <div class="eyebrow">Құрметті қонақтар!</div>
-
-      <p class="copy">
-        АҒАЙЫН-ТУЫС, БАУЫРЛАР!<br>
-        ҚҰДА-ЖЕКЖАТ,<br>
-        НАҒАШЫ-ЖИЕН, ДОСТАР, ӘРІПТЕСТЕР!<br>
-        АҚ ДАСТАРХАНЫМЫЗДЫҢ<br>
-        МӘРТЕБЕЛІ ҚОНАҒЫ БОЛЫП,<br>
-        ШАТТЫҒЫМЫЗҒА ОРТАҚ БОЛУҒА<br>
-        СІЗДЕРДІ ШЫН ЖҮРЕКТЕН ШАҚЫРАМЫЗ.
-      </p>
-
-      <div class="divider-oval"></div>
-
-      <p class="copy copy-soft">
-        СІЗДЕРГЕ ҚҰРМЕТПЕН
-      </p>
-
-      <h2 class="script-title">Арманбек & Ғалия</h2>
-    </section>
-
-    <!-- 03. COUPLE / OWNERS -->
-    <section class="section hosts reveal">
-      <span class="leaf leaf-bottom-right"></span>
-      <span class="gold-branch branch-bottom-left small"></span>
-
-      <div class="eyebrow">Той иесі</div>
-      <h2 class="script-title">Таубәгүл</h2>
-
-      <p class="copy compact">
-        ҮЙЛЕНУ ТОЙЫНА<br>
-        АРНАЛҒАН САЛТАНАТҚА<br>
-        ҚАТЫСУҒА ШАҚЫРАМЫЗ.
-      </p>
-    </section>
-
-    <!-- 04. DATE -->
-    <section class="section date reveal">
-      <span class="gold-branch branch-top-left small"></span>
-
-      <div class="eyebrow">Той салтанаты</div>
-
-      <div class="date-head">
-        <div>
-          <span class="date-label">ҚАЗАН</span>
-          <strong>2026</strong>
-        </div>
-        <div class="date-circle">
-          <span>28</span>
-        </div>
-        <div>
-          <span class="date-label">САҒАТ</span>
-          <strong>18:00</strong>
-        </div>
-      </div>
-
-      <div class="calendar">
-        <div class="calendar-title">ҚАЗАН <strong>2026</strong></div>
-        <div class="calendar-grid weekdays">
-          <span>ДС</span><span>СC</span><span>СР</span><span>БС</span><span>ЖМ</span><span>СН</span><span>ЖС</span>
-        </div>
-        <div class="calendar-grid days">
-          <span> </span><span> </span><span> </span><span>1</span><span>2</span><span>3</span><span>4</span>
-          <span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span>
-          <span>12</span><span>13</span><span >14</span><span>15</span><span>16</span><span>17</span><span>18</span>
-          <span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span>
-          <span>26</span><span>27</span><span class="chosen">28</span><span>29</span><span>30</span><span>31</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- 05. PLACE -->
-    <section class="section place reveal">
-      <div class="photo-panel">
-        <img src="venue.jpg" alt="Той өтетін орын" onerror="this.classList.add('missing')">
-        <div class="photo-fallback">
-          <span>venue.jpg</span>
-          <small>Осы жерге мейрамхана фотосын салыңыз</small>
-        </div>
-      </div>
-
-      <div class="place-card">
-        <div class="eyebrow">Мекенжайы</div>
-        <p>АСТАНА ҚАЛАСЫ</p>
-        <h2 class="script-title">Golden Hall</h2>
-        <p>МЕЙРАМХАНАСЫ</p>
-
-        <a
-          class="outline-btn"
-          href="https://go.2gis.com/4Tmu1/"
-          target="_blank"
-          rel="noopener"
-        >
-          КАРТА <span class="pin">⌖</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- 07. RSVP -->
-    <section class="section rsvp reveal">
-      <div class="eyebrow">Құрметті қонақ!</div>
-      <h2 class="rsvp-title">ТОЙҒА ҚАТЫСУЫҢЫЗДЫ<br>РАСТАУЫҢЫЗДЫ СҰРАЙМЫЗ</h2>
-
-      <form id="rsvpForm" class="rsvp-form">
-        <label>
-          <span>АТЫ-ЖӨНІҢІЗ</span>
-          <input name="name" type="text" placeholder="Аты-жөніңіз" required>
-        </label>
-
-        <fieldset>
-          <legend>ҚАТЫСУ</legend>
-
-          <label class="radio-row">
-            <input type="radio" name="attendance" value="Қатысамын" required>
-            <span class="radio-ui"></span>
-            <span>ҚАТЫСАМЫН</span>
-          </label>
-
-          <label class="radio-row">
-            <input type="radio" name="attendance" value="Жұбайыммен қатысамын">
-            <span class="radio-ui"></span>
-            <span>ЖҰБАЙЫММЕН ҚАТЫСАМЫН</span>
-          </label>
-
-          <label class="radio-row">
-            <input type="radio" name="attendance" value="Өкінішке қарай қатыса алмаймын">
-            <span class="radio-ui"></span>
-            <span>ӨКІНІШКЕ ҚАРАЙ ҚАТЫСА АЛМАЙМЫН</span>
-          </label>
-        </fieldset>
-
-        <label>
-          <span>ҚОНАҚ САНЫ</span>
-          <select name="guests">
-            <option value="1">1 адам</option>
-            <option value="2">2 адам</option>
-            <option value="3">3 адам</option>
-            <option value="4">4 адам</option>
-          </select>
-        </label>
-
-        <button class="submit-btn" type="submit">ЖІБЕРУ</button>
-        <p class="form-status" id="formStatus" aria-live="polite"></p>
-      </form>
-    </section>
-
-    <!-- 08. FINAL -->
-    <section class="section final reveal">
-      <span class="leaf leaf-top-right"></span>
-
-      <div class="final-frame">
-        <div class="eyebrow">Қуанышымызға ортақ болыңыз!</div>
-        <h2 class="script-title">Аян & Ая</h2>
-
-        <a class="outline-btn" href="https://maps.google.com/" target="_blank" rel="noopener">
-          КАРТА <span class="pin">⌖</span>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
+<section class="screen rsvp" id="rsvp">
+  <div class="script section-title">Құрметті қонақ!</div>
+  <h2>ТОЙҒА ҚАТЫСУЫҢЫЗДЫ<br>РАСТАУЫҢЫЗДЫ СҰРАЙМЫЗ!</h2>
+  <form id="form">
+    <label>ЕСІМДЕРІҢІЗ<input name="name" required placeholder="Есіміңізді жазыңыз"></label>
+    <div class="note">(ЖҰБАЙЫҢЫЗБЕН КЕЛЕТІН БОЛСАҢЫЗ, ЕКЕУІҢІЗДІҢ ДЕ ЕСІМДЕРІҢІЗДІ ЖАЗУЫҢЫЗДЫ СҰРАЙМЫЗ)</div>
+    <label>ҚАТЫСУЫҢЫЗ:</label>
+    <label class="radio"><input type="radio" name="attendance" value="Қатысамын" required><span></span> ҚАТЫСАМЫН</label>
+    <label class="radio"><input type="radio" name="attendance" value="Жұбайыммен барамын"><span></span> ЖҰБАЙЫММЕН БАРАМЫН</label>
+    <label class="radio"><input type="radio" name="attendance" value="Қатыса алмаймын"><span></span> ӨКІНІШКЕ ҚАРАЙ, КЕЛЕ АЛМАЙМЫН</label>
+    <label>ҚОНАҚТАР САНЫ</label>
+    <div class="counter"><button type="button" data-n="-1">−</button><output id="count">1</output><button type="button" data-n="1">+</button></div>
+    <input type="hidden" name="guests" id="guests" value="1">
+    <button class="send" type="submit">ЖІБЕРУ</button>
+    <div id="status"></div>
+  </form>
+</section>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
